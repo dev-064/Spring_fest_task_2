@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ludo Game</title>
+  </head>
+  <body>
+    <div class="board">
+      <div class="infoA">
+        <p>Player A</p>
+        <div>
+          <div class="tokens_A"></div>
+          <div class="tokens_A"></div>
+        </div>
+        <button class="btn eject-btn-A">Eject</button>
+      </div>
+      <div class="container">
+        <div class="horizontal-bar-top" id="topbar">
+          <div class="box start" id="cell-0">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="box" id="cell-1">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="box" id="cell-2">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="box" id="cell-3">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="box" id="cell-4">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="box" id="cell-5">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="box" id="cell-6">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="box" id="cell-7">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="middle-space">
+          <div class="vertical-bar-left" id="leftbar">
+            <div class="box end" id="cell-27">
+              <div></div>
+              <div></div>
+            </div>
+            <div class="box" id="cell-26">
+              <div></div>
+              <div></div>
+            </div>
+            <div class="box" id="cell-25">
+              <div></div>
+              <div></div>
+            </div>
+            <div class="box" id="cell-24">
+              <div></div>
+              <div></div>
+            </div>
+            <div class="box" id="cell-23">
+              <div></div>
+              <div></div>
+            </div>
+            <div class="box" id="cell-22">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="dice-area">
+            <div class="player-name">Player A Turn</div>
+            <div class="roll-instruction" id="dice">-</div>
+            <button class="btn" onclick="die_animation();roll_action()">
+              ROLL
+            </button>
+            <div class="player-got"></div>
+          </div>
+          <div class="vertical-bar-right" id="rightbar">
+            <div class="box" id="cell-8"><div></div><div></div></div>
+            <div class="box" id="cell-9"><div></div><div></div></div>
+            <div class="box" id="cell-10"><div></div><div></div></div>
+            <div class="box" id="cell-11"><div></div><div></div></div>
+            <div class="box" id="cell-12"><div></div><div></div></div>
+            <div class="box end-red" id="cell-13"><div></div><div></div></div>
+          </div>
+        </div>
+        <div class="horizontal-bar-bottom" id="bottombar">
+          <div class="box" id="cell-21"><div></div><div></div></div>
+          <div class="box" id="cell-20"><div></div><div></div></div>
+          <div class="box" id="cell-19"><div></div><div></div></div>
+          <div class="box" id="cell-18"><div></div><div></div></div>
+          <div class="box" id="cell-17"><div></div><div></div></div>
+          <div class="box" id="cell-16"><div></div><div></div></div>
+          <div class="box" id="cell-15"><div></div><div></div></div>
+          <div class="box start-red" id="cell-14"><div></div><div></div></div>
+        </div>
+      </div>
+      <div class="infoB">
+        <p>Player B</p>
+        <div>
+          <div class="tokens_B"></div>
+          <div class="tokens_B"></div>
+        </div>
+        <button class="btn eject-btn-B">Eject</button>
+      </div>
+    </div>
+  </body>
+  <script src="ludo.js"></script>
+</html>
